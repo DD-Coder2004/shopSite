@@ -1,0 +1,991 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+
+/* Author https://t.me/Anima_1991 */
+
+@font-face {
+    font-family: 'southPark';
+    /* Придумайте назву для шрифту тут */
+    src: url('fonts/south_park.ttf') format('truetype');
+    /* Шлях до файлу */
+    font-weight: normal;
+    /* Вкажіть жирність: normal, bold, 400, 700 тощо */
+    font-style: normal;
+    /* Стиль: normal або italic */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arimo", sans-serif;
+    background-color: #000000;
+    color: #fff;
+}
+
+.wrapper {
+    /* position: relative; */
+    overflow: hidden;
+    padding: 100px;
+}
+
+.backround-fon {
+    background: url('./img/header/South_park.png') no-repeat center;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    max-height: 100vh;
+    position: relative;
+
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header h1 {
+    font-size: 80px;
+    font-family: 'southPark', sans-serif;
+    color: rgba(255, 242, 250, 1);
+    font-weight: 600;
+    margin: 0;
+}
+
+.header .shop {
+    font-family: 'southPark', sans-serif;
+    color: #E12FA1;
+}
+
+.purple {
+    color: #E12FA1;
+}
+
+.hero {
+    height: 100px;
+}
+
+.header .shop {
+    position: relative;
+    /* Робимо його "якірем" для картинки */
+    display: inline-block;
+    /* Блок стискається до розміру контенту */
+    z-index: 1;
+    /* Встановлюємо порядок шарів для батька */
+}
+
+.shop {
+    top: 0;
+    left: 5px;
+}
+
+.vector {
+    position: absolute;
+    top: -25px;
+    left: -23px;
+    z-index: -1;
+    width: 255px;
+}
+
+
+.btn-p {
+    transition: transform 160ms cubic-bezier(.2, .9, .2, 1), box-shadow 160ms ease;
+}
+
+.btn-p:hover,
+.btn-p:focus {
+    transform: translateX(-50%) scale(1.06);
+    box-shadow: 0 10px 24px rgba(225, 47, 161, 0.22);
+}
+
+.section1 {
+    margin-top: 120px;
+    width: 53vw;
+    /* height: 50vh; */
+}
+
+.section1 .big-text {
+    display: inline;
+}
+
+.big-text,
+.small-text {
+    white-space: wrap;
+    /* Забороняє перенос на новий рядок взагалі */
+}
+
+.big-text {
+    font-size: 3vw;
+    font-weight: 700;
+}
+
+.small-text {
+    width: 34vw;
+    font-size: 2vw;
+    font-weight: 400;
+    line-height: 60px;
+    margin-top: 50px;
+}
+
+.backround-fon .chelik {
+    width: 45vw;
+    height: 700px;
+    position: absolute;
+}
+
+.wrapper {
+    position: relative;
+    /* Це робить блок точкою відліку */
+    overflow: hidden;
+}
+
+.chelik {
+    z-index: 1;
+    position: absolute;
+    bottom: -170px;
+    right: -20px;
+    width: 400px;
+    height: auto;
+}
+
+
+/* Реалізація маркету */
+.white-box {
+    z-index: 1;
+    width: 100%;
+    /* height: 211vh; */
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 1);
+    position: relative;
+    top: -100px;
+    padding: 30px;
+
+}
+
+.blocks {
+    display: flex;
+    gap: 10px;
+}
+
+.block {
+    flex: 1;
+    overflow: hidden;
+}
+
+.white-box .blocks {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+
+.blocks .block {
+
+    padding: 0px 0px;
+    width: 518px;
+
+    border-radius: 20px;
+}
+
+/* Make each product block a positioning context so the button can sit above the image */
+.blocks .block {
+    position: relative;
+}
+
+.btn-p {
+    font-size: 1.2vw;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 18px;
+    background: #fff;
+    color: black;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    width: 85%;
+}
+
+.line-p {
+    width: 100%;
+    /* Картинка займе всю доступну ширину свого батьківського блоку */
+    height: auto;
+    /* Зберігає пропорції, щоб картинка не деформувалася */
+    display: block;
+}
+
+/* Робота з середньою частиною сайту*/
+
+.price {
+    text-align: center;
+    font-size: 3vw;
+    font-weight: 600;
+    line-height: 66px;
+}
+
+.garant {
+    margin-top: 50px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 60px;
+    font-size: 2vw;
+}
+
+.purple-block {
+    position: relative;
+    z-index: 1;
+    padding-top: 50px;
+}
+
+.part-b {
+    min-width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    font-weight: 600;
+    line-height: 6vh;
+    color: white;
+    background-color: rgba(225, 47, 161, 1);
+    border: none;
+    gap: 10;
+    transition: transform 160ms cubic-bezier(.2, .9, .2, 1), box-shadow 160ms ease;
+}
+
+.part-b:hover,
+.part-b:focus {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(225, 47, 161, 0.35);
+}
+
+.full-b {
+    min-width: 100%;
+    height: 100%;
+    /* justify-content: center; */
+    align-items: center;
+    font-size: 2vw;
+    font-weight: 600;
+    line-height: 6vh;
+    color: white;
+    background-color: rgba(225, 47, 161, 1);
+    border-radius: 20px;
+    border: none;
+    transition: transform 160ms cubic-bezier(.2, .9, .2, 1), box-shadow 160ms ease;
+}
+
+.full-b:hover,
+.full-b:focus {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(225, 47, 161, 0.35);
+}
+
+.escape {
+    margin-top: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.s-oplata {
+    margin: 35px 0;
+    font-size: 1.5vw;
+    font-weight: 400;
+    line-height: 42px;
+}
+
+.purple-block-2 {
+    width: 100%;
+}
+
+.a-color {
+    position: relative;
+    z-index: 1;
+    border: 2px solid var(--purple, rgba(225, 47, 161, 1));
+    background: rgba(225, 47, 161, 0.2);
+}
+
+/*Реалізація останнього інформативного блоку*/
+
+.contact-us {
+    font-size: 3vw;
+    font-weight: 700;
+    line-height: 86px;
+    margin-top: 8vh;
+    margin-bottom: 4vh;
+}
+
+.block-contact-1,
+.block-contact-2 {
+    gap: 21px;
+    margin-bottom: 21px;
+    color: #000000;
+
+}
+
+.c-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 30px;
+    border: 3px solid black;
+}
+
+.box-size {
+    width: 100%;
+    /* height: 37vh; */
+    background: #FFF2FA;
+    padding: 2vw
+}
+
+/* .chat {
+    padding: 20px;
+} */
+
+.all-info {
+    display: flex;
+    gap: 10;
+}
+
+.all-info .box-size {
+    border-radius: 20px;
+}
+
+.small-info {
+    margin-top: 0.5vh;
+    color: #6a6464;
+    font-size: 1.5vw;
+    display: flex;
+    /* Робить рядок гнучким */
+    align-items: center;
+    /* Рівняє текст і іконку */
+    gap: 5px;
+    /* Відступ між словом і іконкою */
+}
+
+
+.big-info {
+    max-width: 40vw;
+    font-size: 3vw;
+    font-weight: 700;
+    line-height: 54px;
+    margin-top: 0.5vw;
+}
+
+.telegram-icon {
+
+    top: 45px;
+    position: relative;
+    right: -18.5vh;
+
+}
+
+.in-oneline {
+    margin-top: 1vw;
+    display: flex;
+    /* 1. Шикує елементи (дітей) в один ряд */
+    align-items: center;
+    /* 2. Вирівнює їх по центру вертикалі */
+    gap: 20px;
+    /* 3. Відступ між c-info та i-info */
+    justify-content: space-between;
+
+}
+
+.telegram-icon-1 {
+    width: 8vh;
+    transition: transform 240ms cubic-bezier(0.34, 1.56, 0.64, 1), filter 240ms ease;
+    cursor: pointer;
+}
+
+.telegram-icon-1:hover,
+.telegram-icon-1:focus {
+    transform: scale(1.2) rotate(10deg);
+    filter: drop-shadow(0 6px 16px rgba(225, 47, 161, 0.6));
+}
+
+/* .telegram-icon-2 {
+    position: absolute;
+    right: 8.5vh;
+    top: 335vh;
+}
+
+.telegram-icon-3 {
+    position: absolute;
+    right: 95.5vh;
+    top: 374vh;
+}
+
+.telegram-icon-4 {
+    position: absolute;
+    right: 8.5vh;
+    top: 374vh;
+} */
+
+.c-info {
+    max-width: 400px;
+    /* display: flex; */
+    /* position: relative; */
+}
+
+.white-box-2 {
+    width: 100%;
+    height: 33vh;
+    background: #FFF2FA;
+    border-radius: 20px;
+}
+
+.white-box-last h3 {
+    font-size: 61px;
+    font-weight: 700;
+    line-height: 73px;
+    text-align: center;
+}
+
+.white-box-last p,
+.white-box-last a {
+    text-align: center;
+    color: #6a6464;
+    font-size: 1.5vw;
+}
+
+.white-box-last a {
+    text-decoration: none;
+}
+
+.block-contact-last {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    background-color: #FFF2FA;
+    border-radius: 20px;
+    height: 37vh;
+    color: #000000;
+}
+
+.last-page {
+    position: absolute;
+}
+
+.v-tabletki {
+    width: 20vw;
+    bottom: 0;
+    left: 35px;
+}
+
+.n-molnia {
+    right: 0px;
+    width: 22vw;
+    bottom: 0;
+}
+
+.v-kristal {
+    width: 20vw;
+    right: 9vw;
+    top: 0vh;
+}
+
+.v-molnia {
+    width: 25vw;
+    top: 0vh;
+    left: 0vh;
+}
+
+.block-images {
+    overflow: hidden;
+}
+
+.purple-4 {
+    left: 0vw;
+    z-index: 0;
+    width: 43vw;
+    height: 170vh;
+    top: 250vh;
+}
+
+/*Реалізація бокових ефектів*/
+
+.size {
+    position: absolute;
+}
+
+.text-img {
+    width: 31vw;
+    right: 66vw;
+    top: 45vh;
+    ;
+}
+
+.chelik-back {
+    z-index: 0;
+    width: 45vw;
+    top: 19vh;
+    right: 0;
+}
+
+.purple-1 {
+    right: 0vw;
+    z-index: 0;
+    width: 30vw;
+    height: 170vh;
+    top: 75vh;
+}
+
+.zip-1 {
+    width: 14vw;
+    z-index: 1;
+    top: 130vh;
+    right: 0;
+}
+
+.purple-2 {
+    left: 0vw;
+    z-index: 0;
+    width: 30vw;
+    height: 170vh;
+    top: 180vh;
+}
+
+.zip-2 {
+    width: 14vw;
+    z-index: 1;
+    top: 240vh;
+    left: 0;
+}
+
+.purple-3 {
+    z-index: 0;
+    right: 0vw;
+    z-index: 0;
+    height: 150vh;
+    top: 270vh;
+}
+
+.purple-4 {
+    left: 0vw;
+    z-index: 0;
+    width: 43vw;
+    height: 170vh;
+    top: 335vh;
+}
+
+.footer-img {
+    bottom: 0vh;
+    height: 60vh;
+    width: 100%;
+}
+
+/*Адаптив*/
+
+@media (max-width: 1024px) {
+
+
+    .vector {
+        position: absolute;
+        top: -2.5vh;
+        left: -2.5vw;
+        z-index: -1;
+        width: 15vw;
+    }
+
+    .header h1 {
+        font-size: 4vw;
+    }
+
+
+    .backround-fon .chelik {
+        right: 5vw;
+        height: 620px;
+    }
+
+    .section1 {
+        margin-top: 5vh;
+        width: 40vw;
+    }
+
+    .small-text {
+        line-height: 6vh;
+    }
+
+    .white-box {
+        padding: 2vh;
+    }
+
+    .price {
+        line-height: 6vh;
+    }
+
+    .garant {
+        margin-top: 3vh;
+    }
+
+    .purple-block {
+        position: relative;
+        z-index: 1;
+        padding-top: 3vh;
+    }
+
+    .part-b {
+        font-weight: 500;
+    }
+
+    .full-b {
+        font-weight: 500;
+    }
+
+    .contact-us {
+        font-size: 2vw;
+        margin-top: 4vh;
+        margin-bottom: 30px;
+        font-weight: 600;
+    }
+
+    .s-oplata {
+        margin: 3vh;
+    }
+
+    .small-info {
+        margin-top: 0;
+    }
+
+    .contact-us {
+        font-size: 2vw;
+        margin-top: 2vh;
+        margin-bottom: 1vh;
+        font-weight: 600;
+    }
+
+    .btn-p {
+        font-size: 1vw;
+    }
+
+    .purple-4 {
+
+        top: 255vh;
+    }
+
+    /*Текст*/
+
+    .text-img {
+        top: 29vh;
+    }
+
+    .chelik-back {
+        right: 5vw;
+    }
+
+    .zip-2 {
+        top: 200vh;
+        width: 18vw;
+    }
+
+    .purple-2 {
+        top: 145vh;
+    }
+
+    .purple-3 {
+        top: 210vh;
+    }
+}
+
+@media (min-width: 1440px) {
+    .section1 {
+        width: 40vw;
+    }
+
+    .text-img {
+        width: 31vw;
+        right: 68vw;
+        top: 43vh;
+    }
+
+    .purple-3 {
+        top: 230vh;
+    }
+
+    .zip-2 {
+        top: 225vh;
+    }
+
+    .purple-2 {
+        top: 165vh;
+    }
+
+    .purple-4 {
+        top: 310vh;
+    }
+}
+
+@media (min-width: 1600px) {
+
+    .text-img {
+        right: 69vw;
+        top: 38vh;
+    }
+
+}
+
+@media (min-width: 1800px) {
+    .text-img {
+        right: 69vw;
+        top: 34vh;
+    }
+
+}
+
+@media (min-width: 2000px) {
+    .backround-fon .chelik {
+        height: 55vh;
+        width: 45vw;
+        height: 103%;
+    }
+
+    .text-img {
+        right: 70vw;
+        top: 29vh;
+    }
+
+}
+
+@media (min-width: 2200px) {
+    .text-img {
+        right: 71vw;
+        top: 25vh;
+    }
+}
+
+@media (min-width: 2550px) {
+
+    .text-img {
+        right: 72vw;
+        top: 18vh;
+    }
+
+    .chelik-back {
+        top: 0vh;
+    }
+
+    .white-box {
+        padding: 2vw;
+    }
+
+    .white-box .blocks {
+        padding: 5px 30px;
+    }
+
+    .purple-1 {
+        top: 40vh;
+    }
+
+    .zip-1 {
+        top: 100vh;
+    }
+
+    .purple-2 {
+        top: 120vh;
+    }
+
+    .zip-2 {
+        top: 190vh;
+    }
+
+    .purple-3 {
+        top: 180vh;
+    }
+
+    .purple-4 {
+        top: 222vh;
+    }
+
+    .c-info {
+        max-width: 45vh;
+    }
+
+    .white-box-last h3 {
+        font-size: 5vw;
+        font-weight: 700;
+        line-height: 73px;
+        text-align: center;
+    }
+
+    .white-box-last p {
+        margin-top: 2vw;
+    }
+
+    .btn-p {
+        font-size: 1.5vw;
+        bottom: 3vh;
+    }
+}
+
+@media screen and (min-width: 3000px) {
+    .purple-4 {
+        top: 260vh;
+    }
+}
+
+
+/*
+@media screen and (min-width: 1440px) {
+    .box-size {
+        height: 43vh;
+    }
+
+    .telegram-icon-1 {
+        position: absolute;
+        right: 112vh;
+        top: 418vh;
+    }
+
+    .telegram-icon-2 {
+        position: absolute;
+        right: 16.5vh;
+        top: 418vh;
+    }
+
+    .telegram-icon-3 {
+        position: absolute;
+        right: 112vh;
+        top: 465vh;
+    }
+
+    .telegram-icon-4 {
+        position: absolute;
+        right: 16vh;
+        top: 465vh;
+
+    }
+
+    .v-kristal {
+        width: 20vw;
+        right: 196px;
+        top: 0vh;
+    }
+
+    .v-molnia {
+        width: 20vw;
+        top: 0vh;
+        left: 0vh;
+    }
+
+    .v-tabletki {
+        width: 15vw;
+        bottom: 0;
+        left: 35px;
+    }
+
+    .n-molnia {
+
+        right: 0px;
+        width: 20vw;
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .telegram-icon-1 {
+        position: absolute;
+        right: 97vh;
+        top: 354vh;
+    }
+
+    .telegram-icon-2 {
+        position: absolute;
+        right: 14.5vh;
+        top: 354vh;
+    }
+
+    .telegram-icon-3 {
+        position: absolute;
+        right: 97vh;
+        top: 394vh;
+    }
+
+    .telegram-icon-4 {
+        position: absolute;
+        right: 14.5vh;
+        top: 394vh;
+
+    }
+
+    .v-kristal {
+        width: 20vw;
+        right: 196px;
+        top: 0vh;
+    }
+
+    .contact-us {
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    .all-info {
+        width: 48.7%;
+        display: flex;
+        gap: 10;
+    }
+
+    .telegram-icon-1 {
+        height: 10vh;
+        right: 87vh;
+        top: 326vh;
+    }
+
+    .telegram-icon-2 {
+        height: 10vh;
+        right: 18.5vh;
+
+        top: 326vh;
+    }
+
+    .telegram-icon-3 {
+        height: 10vh;
+        right: 87vh;
+        top: 367vh;
+    }
+
+    .telegram-icon-4 {
+        height: 10vh;
+        right: 18.5vh;
+        top: 367vh;
+    }
+
+    .small-text {
+
+        line-height: 40px;
+
+    }
+
+    .backround-fon .chelik {
+        height: 620px;
+
+    }
+
+    .white-box {
+        padding: none;
+    }
+
+    .price {
+
+        line-height: 55px;
+    }
+
+    .contact-us {
+        margin-top: 50px;
+        margin-bottom: 25px;
+    }
+
+    .maxx {
+        width: 100%;
+    }
+
+
+} */
